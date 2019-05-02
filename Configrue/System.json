@@ -1,0 +1,347 @@
+{
+  "$type": "GeneralMachine.Config.SystemConfig, GeneralMachine.Config",
+  "Machines": {
+    "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Config.Module, GeneralMachine.Config],[GeneralMachine.Config.MachineConfig, GeneralMachine.Config]], mscorlib",
+    "Front": {
+      "$type": "GeneralMachine.Config.MachineConfig, GeneralMachine.Config",
+      "NozzleMap": {
+        "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Config.Nozzle, GeneralMachine.Config],[GeneralMachine.Config.NozzleConfig, GeneralMachine.Config]], mscorlib",
+        "Nz1": {
+          "$type": "GeneralMachine.Config.NozzleConfig, GeneralMachine.Config",
+          "SafeHeight": 0.0,
+          "PasteHeight": 5.14,
+          "XIHeight": 5.14,
+          "DropHeight": 0.0,
+          "RInit": 0.0,
+          "PosFlyOffset": 0.0,
+          "NegFlyOffset": 0.0,
+          "RotatePoint": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "NzToCam": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "NzHolePoint": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        "Nz2": {
+          "$type": "GeneralMachine.Config.NozzleConfig, GeneralMachine.Config",
+          "SafeHeight": 0.0,
+          "PasteHeight": -15.44,
+          "XIHeight": -15.84,
+          "DropHeight": 0.0,
+          "RInit": 0.0,
+          "PosFlyOffset": 0.0,
+          "NegFlyOffset": 0.0,
+          "RotatePoint": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "NzToCam": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "NzHolePoint": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        "Nz3": {
+          "$type": "GeneralMachine.Config.NozzleConfig, GeneralMachine.Config",
+          "SafeHeight": 0.0,
+          "PasteHeight": -16.72,
+          "XIHeight": -16.72,
+          "DropHeight": 0.0,
+          "RInit": 0.0,
+          "PosFlyOffset": 0.0,
+          "NegFlyOffset": 0.0,
+          "RotatePoint": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "NzToCam": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "NzHolePoint": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        "Nz4": {
+          "$type": "GeneralMachine.Config.NozzleConfig, GeneralMachine.Config",
+          "SafeHeight": 0.0,
+          "PasteHeight": 8.34,
+          "XIHeight": 8.34,
+          "DropHeight": 0.0,
+          "RInit": 0.0,
+          "PosFlyOffset": 0.0,
+          "NegFlyOffset": 0.0,
+          "RotatePoint": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "NzToCam": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "NzHolePoint": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "ReadyPoint": {
+        "$type": "System.Drawing.PointF, System.Drawing",
+        "IsEmpty": false,
+        "X": 156.81,
+        "Y": -40.78
+      },
+      "DropPoint": {
+        "$type": "System.Drawing.PointF, System.Drawing",
+        "IsEmpty": false,
+        "X": 156.81,
+        "Y": -40.78
+      },
+      "XLimit": {
+        "$type": "GeneralMachine.Definition.LimitRange, GeneralMachineCommon",
+        "LowerLimit": -70.21,
+        "UpperLimit": 337.66
+      },
+      "YLimit": {
+        "$type": "GeneralMachine.Definition.LimitRange, GeneralMachineCommon",
+        "LowerLimit": -49.37,
+        "UpperLimit": 608.9
+      },
+      "WorkRange": {
+        "$type": "GeneralMachine.Definition.LimitRange, GeneralMachineCommon",
+        "LowerLimit": 155.5,
+        "UpperLimit": 544.55
+      },
+      "TrunPasteAngle": 178.064,
+      "TrunSuckAngle": 0.004,
+      "DropDelay": 200,
+      "AutoSpeedMode": 4,
+      "UsedTrack": 0
+    },
+    "After": {
+      "$type": "GeneralMachine.Config.MachineConfig, GeneralMachine.Config",
+      "NozzleMap": {
+        "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Config.Nozzle, GeneralMachine.Config],[GeneralMachine.Config.NozzleConfig, GeneralMachine.Config]], mscorlib",
+        "Nz1": {
+          "$type": "GeneralMachine.Config.NozzleConfig, GeneralMachine.Config",
+          "SafeHeight": 0.0,
+          "PasteHeight": 10.06,
+          "XIHeight": 8.94,
+          "DropHeight": 0.0,
+          "RInit": 0.0,
+          "PosFlyOffset": 0.0,
+          "NegFlyOffset": 0.0,
+          "RotatePoint": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "NzToCam": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "NzHolePoint": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        "Nz2": {
+          "$type": "GeneralMachine.Config.NozzleConfig, GeneralMachine.Config",
+          "SafeHeight": 0.0,
+          "PasteHeight": -10.84,
+          "XIHeight": -8.68,
+          "DropHeight": 0.0,
+          "RInit": 0.0,
+          "PosFlyOffset": 0.0,
+          "NegFlyOffset": 0.0,
+          "RotatePoint": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "NzToCam": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "NzHolePoint": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        "Nz3": {
+          "$type": "GeneralMachine.Config.NozzleConfig, GeneralMachine.Config",
+          "SafeHeight": 0.0,
+          "PasteHeight": 10.74,
+          "XIHeight": 10.44,
+          "DropHeight": 0.0,
+          "RInit": 0.0,
+          "PosFlyOffset": 0.0,
+          "NegFlyOffset": 0.0,
+          "RotatePoint": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "NzToCam": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "NzHolePoint": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        "Nz4": {
+          "$type": "GeneralMachine.Config.NozzleConfig, GeneralMachine.Config",
+          "SafeHeight": 0.0,
+          "PasteHeight": -11.52,
+          "XIHeight": -10.16,
+          "DropHeight": 0.0,
+          "RInit": 0.0,
+          "PosFlyOffset": 0.0,
+          "NegFlyOffset": 0.0,
+          "RotatePoint": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "NzToCam": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "NzHolePoint": {
+            "$type": "System.Drawing.PointF, System.Drawing",
+            "IsEmpty": true,
+            "X": 0.0,
+            "Y": 0.0
+          }
+        }
+      },
+      "ReadyPoint": {
+        "$type": "System.Drawing.PointF, System.Drawing",
+        "IsEmpty": false,
+        "X": 161.17,
+        "Y": 4.85
+      },
+      "DropPoint": {
+        "$type": "System.Drawing.PointF, System.Drawing",
+        "IsEmpty": false,
+        "X": 161.17,
+        "Y": 4.85
+      },
+      "XLimit": {
+        "$type": "GeneralMachine.Definition.LimitRange, GeneralMachineCommon",
+        "LowerLimit": -70.29,
+        "UpperLimit": 347.33
+      },
+      "YLimit": {
+        "$type": "GeneralMachine.Definition.LimitRange, GeneralMachineCommon",
+        "LowerLimit": -39.59,
+        "UpperLimit": 700.54
+      },
+      "WorkRange": {
+        "$type": "GeneralMachine.Definition.LimitRange, GeneralMachineCommon",
+        "LowerLimit": 207.22,
+        "UpperLimit": 665.5
+      },
+      "TrunPasteAngle": 451.08,
+      "TrunSuckAngle": 0.01,
+      "DropDelay": 200,
+      "AutoSpeedMode": 4,
+      "UsedTrack": 0
+    }
+  },
+  "Tracks": {
+    "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Config.Track, GeneralMachine.Config],[GeneralMachine.Config.TrackConfig, GeneralMachine.Config]], mscorlib",
+    "ForntTrack": {
+      "$type": "GeneralMachine.Config.TrackConfig, GeneralMachine.Config",
+      "FlowInOutMode": 2,
+      "CarryBefore": 200,
+      "CarryOver": 200,
+      "OnLine": true,
+      "MointorAfterRequeset": false,
+      "OutputDelay": 200,
+      "InputDelay": 0
+    },
+    "AfterTrack": {
+      "$type": "GeneralMachine.Config.TrackConfig, GeneralMachine.Config",
+      "FlowInOutMode": 2,
+      "CarryBefore": 200,
+      "CarryOver": 200,
+      "OnLine": true,
+      "MointorAfterRequeset": false,
+      "OutputDelay": 200,
+      "InputDelay": 0
+    }
+  },
+  "General": {
+    "$type": "GeneralMachine.Config.GeneralConfig, GeneralMachine.Config",
+    "RunMode": 0,
+    "UpCamDelay": 100,
+    "DownCamDelay": 100,
+    "FlowStepTime": 15000,
+    "FeederOutTime": 5000,
+    "ReachBeforeDelay": 200,
+    "ReachAfterDelay": 200,
+    "ContinuousSuckAlarm": 3,
+    "ContinuousDropAlarm": 101,
+    "EnableDryRun": false,
+    "EnableSuckTest": false,
+    "SafeSpace": 20.0,
+    "ImageSaveMode": 3,
+    "ImagePath": "",
+    "YMaxSafe": 333.25
+  }
+}

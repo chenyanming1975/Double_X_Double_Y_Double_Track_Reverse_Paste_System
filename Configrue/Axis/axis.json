@@ -1,0 +1,912 @@
+{
+  "$type": "GeneralMachine.Config.AxisDefine, GeneralMachine.Config",
+  "MachineAxis": {
+    "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Config.Module, GeneralMachine.Config],[GeneralMachine.Config.MachineAxis, GeneralMachine.Config]], mscorlib",
+    "Front": {
+      "$type": "GeneralMachine.Config.MachineAxis, GeneralMachine.Config",
+      "X": {
+        "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+        "AxisSts": 0,
+        "bPosLimit": false,
+        "bNegLimit": false,
+        "bHome": false,
+        "bAxisServoWarning": false,
+        "bAxisServoOn": false,
+        "bAxisIsRunning": false,
+        "bAxisIsHoming": false,
+        "bAxisEmgOn": false,
+        "bAxisReady": true,
+        "bArrIO_In": {
+          "$type": "System.Boolean[], mscorlib",
+          "$values": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "bArrIO_Out": {
+          "$type": "System.Boolean[], mscorlib",
+          "$values": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "AxisPrfPos": 0.0,
+        "AxisEncPos": 0.0,
+        "CardNO": 0,
+        "AxisNo": 0,
+        "AxisRatio": 100.0,
+        "Source": 1,
+        "MinDiff": 0.02,
+        "HomeDirection": true,
+        "HomeMode": 11
+      },
+      "Y": {
+        "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+        "AxisSts": 0,
+        "bPosLimit": false,
+        "bNegLimit": false,
+        "bHome": false,
+        "bAxisServoWarning": false,
+        "bAxisServoOn": false,
+        "bAxisIsRunning": false,
+        "bAxisIsHoming": false,
+        "bAxisEmgOn": false,
+        "bAxisReady": true,
+        "bArrIO_In": {
+          "$type": "System.Boolean[], mscorlib",
+          "$values": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "bArrIO_Out": {
+          "$type": "System.Boolean[], mscorlib",
+          "$values": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "AxisPrfPos": 0.0,
+        "AxisEncPos": 0.0,
+        "CardNO": 0,
+        "AxisNo": 1,
+        "AxisRatio": 100.0,
+        "Source": 1,
+        "MinDiff": 0.02,
+        "HomeDirection": true,
+        "HomeMode": 11
+      },
+      "Z": {
+        "$type": "System.Collections.Generic.List`1[[GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion]], mscorlib",
+        "$values": [
+          {
+            "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+            "AxisSts": 0,
+            "bPosLimit": false,
+            "bNegLimit": false,
+            "bHome": false,
+            "bAxisServoWarning": false,
+            "bAxisServoOn": false,
+            "bAxisIsRunning": false,
+            "bAxisIsHoming": false,
+            "bAxisEmgOn": false,
+            "bAxisReady": true,
+            "bArrIO_In": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "bArrIO_Out": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "AxisPrfPos": 0.0,
+            "AxisEncPos": 0.0,
+            "CardNO": 4,
+            "AxisNo": 0,
+            "AxisRatio": 50.0,
+            "Source": 1,
+            "MinDiff": 0.05,
+            "HomeDirection": true,
+            "HomeMode": 0
+          },
+          {
+            "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+            "AxisSts": 0,
+            "bPosLimit": false,
+            "bNegLimit": false,
+            "bHome": false,
+            "bAxisServoWarning": false,
+            "bAxisServoOn": false,
+            "bAxisIsRunning": false,
+            "bAxisIsHoming": false,
+            "bAxisEmgOn": false,
+            "bAxisReady": true,
+            "bArrIO_In": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "bArrIO_Out": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "AxisPrfPos": 0.0,
+            "AxisEncPos": 0.0,
+            "CardNO": 4,
+            "AxisNo": 0,
+            "AxisRatio": 50.0,
+            "Source": 1,
+            "MinDiff": 0.05,
+            "HomeDirection": true,
+            "HomeMode": 0
+          },
+          {
+            "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+            "AxisSts": 0,
+            "bPosLimit": false,
+            "bNegLimit": false,
+            "bHome": false,
+            "bAxisServoWarning": false,
+            "bAxisServoOn": false,
+            "bAxisIsRunning": false,
+            "bAxisIsHoming": false,
+            "bAxisEmgOn": false,
+            "bAxisReady": true,
+            "bArrIO_In": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "bArrIO_Out": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "AxisPrfPos": 0.0,
+            "AxisEncPos": 0.0,
+            "CardNO": 4,
+            "AxisNo": 1,
+            "AxisRatio": 50.0,
+            "Source": 1,
+            "MinDiff": 0.05,
+            "HomeDirection": true,
+            "HomeMode": 0
+          },
+          {
+            "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+            "AxisSts": 0,
+            "bPosLimit": false,
+            "bNegLimit": false,
+            "bHome": false,
+            "bAxisServoWarning": false,
+            "bAxisServoOn": false,
+            "bAxisIsRunning": false,
+            "bAxisIsHoming": false,
+            "bAxisEmgOn": false,
+            "bAxisReady": true,
+            "bArrIO_In": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "bArrIO_Out": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "AxisPrfPos": 0.0,
+            "AxisEncPos": 0.0,
+            "CardNO": 4,
+            "AxisNo": 1,
+            "AxisRatio": 50.0,
+            "Source": 1,
+            "MinDiff": 0.05,
+            "HomeDirection": true,
+            "HomeMode": 0
+          }
+        ]
+      },
+      "R": {
+        "$type": "System.Collections.Generic.List`1[[GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion]], mscorlib",
+        "$values": [
+          {
+            "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+            "AxisSts": 0,
+            "bPosLimit": false,
+            "bNegLimit": false,
+            "bHome": false,
+            "bAxisServoWarning": false,
+            "bAxisServoOn": false,
+            "bAxisIsRunning": false,
+            "bAxisIsHoming": false,
+            "bAxisEmgOn": false,
+            "bAxisReady": true,
+            "bArrIO_In": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "bArrIO_Out": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "AxisPrfPos": 0.0,
+            "AxisEncPos": 0.0,
+            "CardNO": 1,
+            "AxisNo": 0,
+            "AxisRatio": 18.889,
+            "Source": 0,
+            "MinDiff": 0.02,
+            "HomeDirection": true,
+            "HomeMode": 0
+          },
+          {
+            "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+            "AxisSts": 0,
+            "bPosLimit": false,
+            "bNegLimit": false,
+            "bHome": false,
+            "bAxisServoWarning": false,
+            "bAxisServoOn": false,
+            "bAxisIsRunning": false,
+            "bAxisIsHoming": false,
+            "bAxisEmgOn": false,
+            "bAxisReady": true,
+            "bArrIO_In": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "bArrIO_Out": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "AxisPrfPos": 0.0,
+            "AxisEncPos": 0.0,
+            "CardNO": 1,
+            "AxisNo": 1,
+            "AxisRatio": 18.889,
+            "Source": 0,
+            "MinDiff": 0.02,
+            "HomeDirection": true,
+            "HomeMode": 0
+          },
+          {
+            "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+            "AxisSts": 0,
+            "bPosLimit": false,
+            "bNegLimit": false,
+            "bHome": false,
+            "bAxisServoWarning": false,
+            "bAxisServoOn": false,
+            "bAxisIsRunning": false,
+            "bAxisIsHoming": false,
+            "bAxisEmgOn": false,
+            "bAxisReady": true,
+            "bArrIO_In": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "bArrIO_Out": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "AxisPrfPos": 0.0,
+            "AxisEncPos": 0.0,
+            "CardNO": 1,
+            "AxisNo": 2,
+            "AxisRatio": 18.889,
+            "Source": 0,
+            "MinDiff": 0.02,
+            "HomeDirection": true,
+            "HomeMode": 0
+          },
+          {
+            "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+            "AxisSts": 0,
+            "bPosLimit": false,
+            "bNegLimit": false,
+            "bHome": false,
+            "bAxisServoWarning": false,
+            "bAxisServoOn": false,
+            "bAxisIsRunning": false,
+            "bAxisIsHoming": false,
+            "bAxisEmgOn": false,
+            "bAxisReady": true,
+            "bArrIO_In": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "bArrIO_Out": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "AxisPrfPos": 0.0,
+            "AxisEncPos": 0.0,
+            "CardNO": 1,
+            "AxisNo": 3,
+            "AxisRatio": 18.889,
+            "Source": 0,
+            "MinDiff": 0.02,
+            "HomeDirection": true,
+            "HomeMode": 0
+          }
+        ]
+      },
+      "Trun": {
+        "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+        "AxisSts": 0,
+        "bPosLimit": false,
+        "bNegLimit": false,
+        "bHome": false,
+        "bAxisServoWarning": false,
+        "bAxisServoOn": false,
+        "bAxisIsRunning": false,
+        "bAxisIsHoming": false,
+        "bAxisEmgOn": false,
+        "bAxisReady": true,
+        "bArrIO_In": {
+          "$type": "System.Boolean[], mscorlib",
+          "$values": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "bArrIO_Out": {
+          "$type": "System.Boolean[], mscorlib",
+          "$values": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "AxisPrfPos": 0.0,
+        "AxisEncPos": 0.0,
+        "CardNO": 0,
+        "AxisNo": 2,
+        "AxisRatio": 250.0,
+        "Source": 1,
+        "MinDiff": 0.02,
+        "HomeDirection": true,
+        "HomeMode": 11
+      }
+    },
+    "After": {
+      "$type": "GeneralMachine.Config.MachineAxis, GeneralMachine.Config",
+      "X": {
+        "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+        "AxisSts": 0,
+        "bPosLimit": false,
+        "bNegLimit": false,
+        "bHome": false,
+        "bAxisServoWarning": false,
+        "bAxisServoOn": false,
+        "bAxisIsRunning": false,
+        "bAxisIsHoming": false,
+        "bAxisEmgOn": false,
+        "bAxisReady": true,
+        "bArrIO_In": {
+          "$type": "System.Boolean[], mscorlib",
+          "$values": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "bArrIO_Out": {
+          "$type": "System.Boolean[], mscorlib",
+          "$values": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "AxisPrfPos": 0.0,
+        "AxisEncPos": 0.0,
+        "CardNO": 2,
+        "AxisNo": 0,
+        "AxisRatio": 100.0,
+        "Source": 1,
+        "MinDiff": 0.02,
+        "HomeDirection": true,
+        "HomeMode": 11
+      },
+      "Y": {
+        "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+        "AxisSts": 0,
+        "bPosLimit": false,
+        "bNegLimit": false,
+        "bHome": false,
+        "bAxisServoWarning": false,
+        "bAxisServoOn": false,
+        "bAxisIsRunning": false,
+        "bAxisIsHoming": false,
+        "bAxisEmgOn": false,
+        "bAxisReady": true,
+        "bArrIO_In": {
+          "$type": "System.Boolean[], mscorlib",
+          "$values": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "bArrIO_Out": {
+          "$type": "System.Boolean[], mscorlib",
+          "$values": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "AxisPrfPos": 0.0,
+        "AxisEncPos": 0.0,
+        "CardNO": 2,
+        "AxisNo": 1,
+        "AxisRatio": 100.0,
+        "Source": 1,
+        "MinDiff": 0.02,
+        "HomeDirection": true,
+        "HomeMode": 11
+      },
+      "Z": {
+        "$type": "System.Collections.Generic.List`1[[GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion]], mscorlib",
+        "$values": [
+          {
+            "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+            "AxisSts": 0,
+            "bPosLimit": false,
+            "bNegLimit": false,
+            "bHome": false,
+            "bAxisServoWarning": false,
+            "bAxisServoOn": false,
+            "bAxisIsRunning": false,
+            "bAxisIsHoming": false,
+            "bAxisEmgOn": false,
+            "bAxisReady": true,
+            "bArrIO_In": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "bArrIO_Out": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "AxisPrfPos": 0.0,
+            "AxisEncPos": 0.0,
+            "CardNO": 4,
+            "AxisNo": 2,
+            "AxisRatio": 50.0,
+            "Source": 1,
+            "MinDiff": 0.02,
+            "HomeDirection": true,
+            "HomeMode": 0
+          },
+          {
+            "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+            "AxisSts": 0,
+            "bPosLimit": false,
+            "bNegLimit": false,
+            "bHome": false,
+            "bAxisServoWarning": false,
+            "bAxisServoOn": false,
+            "bAxisIsRunning": false,
+            "bAxisIsHoming": false,
+            "bAxisEmgOn": false,
+            "bAxisReady": true,
+            "bArrIO_In": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "bArrIO_Out": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "AxisPrfPos": 0.0,
+            "AxisEncPos": 0.0,
+            "CardNO": 4,
+            "AxisNo": 2,
+            "AxisRatio": 50.0,
+            "Source": 1,
+            "MinDiff": 0.02,
+            "HomeDirection": true,
+            "HomeMode": 0
+          },
+          {
+            "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+            "AxisSts": 0,
+            "bPosLimit": false,
+            "bNegLimit": false,
+            "bHome": false,
+            "bAxisServoWarning": false,
+            "bAxisServoOn": false,
+            "bAxisIsRunning": false,
+            "bAxisIsHoming": false,
+            "bAxisEmgOn": false,
+            "bAxisReady": true,
+            "bArrIO_In": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "bArrIO_Out": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "AxisPrfPos": 0.0,
+            "AxisEncPos": 0.0,
+            "CardNO": 4,
+            "AxisNo": 3,
+            "AxisRatio": 50.0,
+            "Source": 1,
+            "MinDiff": 0.02,
+            "HomeDirection": true,
+            "HomeMode": 0
+          },
+          {
+            "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+            "AxisSts": 0,
+            "bPosLimit": false,
+            "bNegLimit": false,
+            "bHome": false,
+            "bAxisServoWarning": false,
+            "bAxisServoOn": false,
+            "bAxisIsRunning": false,
+            "bAxisIsHoming": false,
+            "bAxisEmgOn": false,
+            "bAxisReady": true,
+            "bArrIO_In": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "bArrIO_Out": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "AxisPrfPos": 0.0,
+            "AxisEncPos": 0.0,
+            "CardNO": 4,
+            "AxisNo": 3,
+            "AxisRatio": 50.0,
+            "Source": 1,
+            "MinDiff": 0.02,
+            "HomeDirection": true,
+            "HomeMode": 0
+          }
+        ]
+      },
+      "R": {
+        "$type": "System.Collections.Generic.List`1[[GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion]], mscorlib",
+        "$values": [
+          {
+            "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+            "AxisSts": 0,
+            "bPosLimit": false,
+            "bNegLimit": false,
+            "bHome": false,
+            "bAxisServoWarning": false,
+            "bAxisServoOn": false,
+            "bAxisIsRunning": false,
+            "bAxisIsHoming": false,
+            "bAxisEmgOn": false,
+            "bAxisReady": true,
+            "bArrIO_In": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "bArrIO_Out": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "AxisPrfPos": 0.0,
+            "AxisEncPos": 0.0,
+            "CardNO": 3,
+            "AxisNo": 0,
+            "AxisRatio": 13.889,
+            "Source": 0,
+            "MinDiff": 0.02,
+            "HomeDirection": true,
+            "HomeMode": 0
+          },
+          {
+            "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+            "AxisSts": 0,
+            "bPosLimit": false,
+            "bNegLimit": false,
+            "bHome": false,
+            "bAxisServoWarning": false,
+            "bAxisServoOn": false,
+            "bAxisIsRunning": false,
+            "bAxisIsHoming": false,
+            "bAxisEmgOn": false,
+            "bAxisReady": true,
+            "bArrIO_In": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "bArrIO_Out": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "AxisPrfPos": 0.0,
+            "AxisEncPos": 0.0,
+            "CardNO": 3,
+            "AxisNo": 1,
+            "AxisRatio": 13.889,
+            "Source": 0,
+            "MinDiff": 0.02,
+            "HomeDirection": true,
+            "HomeMode": 0
+          },
+          {
+            "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+            "AxisSts": 0,
+            "bPosLimit": false,
+            "bNegLimit": false,
+            "bHome": false,
+            "bAxisServoWarning": false,
+            "bAxisServoOn": false,
+            "bAxisIsRunning": false,
+            "bAxisIsHoming": false,
+            "bAxisEmgOn": false,
+            "bAxisReady": true,
+            "bArrIO_In": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "bArrIO_Out": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "AxisPrfPos": 0.0,
+            "AxisEncPos": 0.0,
+            "CardNO": 3,
+            "AxisNo": 2,
+            "AxisRatio": 13.889,
+            "Source": 0,
+            "MinDiff": 0.02,
+            "HomeDirection": true,
+            "HomeMode": 0
+          },
+          {
+            "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+            "AxisSts": 0,
+            "bPosLimit": false,
+            "bNegLimit": false,
+            "bHome": false,
+            "bAxisServoWarning": false,
+            "bAxisServoOn": false,
+            "bAxisIsRunning": false,
+            "bAxisIsHoming": false,
+            "bAxisEmgOn": false,
+            "bAxisReady": true,
+            "bArrIO_In": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "bArrIO_Out": {
+              "$type": "System.Boolean[], mscorlib",
+              "$values": [
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            "AxisPrfPos": 0.0,
+            "AxisEncPos": 0.0,
+            "CardNO": 3,
+            "AxisNo": 3,
+            "AxisRatio": 13.889,
+            "Source": 0,
+            "MinDiff": 0.02,
+            "HomeDirection": true,
+            "HomeMode": 0
+          }
+        ]
+      },
+      "Trun": {
+        "$type": "GeneralMachine.Motion.Axis_RunParam, GeneralMachine.Motion",
+        "AxisSts": 0,
+        "bPosLimit": false,
+        "bNegLimit": false,
+        "bHome": false,
+        "bAxisServoWarning": false,
+        "bAxisServoOn": false,
+        "bAxisIsRunning": false,
+        "bAxisIsHoming": false,
+        "bAxisEmgOn": false,
+        "bAxisReady": true,
+        "bArrIO_In": {
+          "$type": "System.Boolean[], mscorlib",
+          "$values": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "bArrIO_Out": {
+          "$type": "System.Boolean[], mscorlib",
+          "$values": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "AxisPrfPos": 0.0,
+        "AxisEncPos": 0.0,
+        "CardNO": 2,
+        "AxisNo": 2,
+        "AxisRatio": 100.0,
+        "Source": 1,
+        "MinDiff": 0.02,
+        "HomeDirection": true,
+        "HomeMode": 11
+      }
+    }
+  }
+}

@@ -1,0 +1,734 @@
+{
+  "$type": "GeneralMachine.Config.SpeedDefine, GeneralMachine.Config",
+  "SpeedConfig": {
+    "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Config.Module, GeneralMachine.Config],[GeneralMachine.Config.SpeedConfig, GeneralMachine.Config]], mscorlib",
+    "Front": {
+      "$type": "GeneralMachine.Config.SpeedConfig, GeneralMachine.Config",
+      "OtherSchemeName": {
+        "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.OtherShceme, GeneralMachine.Motion],[System.String, mscorlib]], mscorlib",
+        "UpFly": "UpFly",
+        "DownFly": "DownFly",
+        "ConverySlow": "ConverySlow",
+        "ConveryNormal": "ConveryNormal"
+      },
+      "SchemeName": {
+        "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.Shceme, GeneralMachine.Motion],[System.String, mscorlib]], mscorlib",
+        "MaunalSlow": "MaunalSlow",
+        "ManualNormal": "ManualNormal",
+        "ManualFast": "ManualFast",
+        "AutoSlow": "AutoSlow",
+        "AutoNormal": "AutoNormal",
+        "AutoFast": "AutoFast",
+        "Home": "Home",
+        "GoLimit": "GoLimit"
+      },
+      "OtherScheme": {
+        "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.OtherShceme, GeneralMachine.Motion],[GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion]], mscorlib",
+        "UpFly": {
+          "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+          "StartSpeed": 0.0,
+          "MaxSpeed": 0.0,
+          "AccTime": 0.0,
+          "DecTime": 0.0
+        },
+        "DownFly": {
+          "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+          "StartSpeed": 0.0,
+          "MaxSpeed": 0.0,
+          "AccTime": 0.0,
+          "DecTime": 0.0
+        },
+        "ConverySlow": {
+          "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+          "StartSpeed": 0.0,
+          "MaxSpeed": 0.0,
+          "AccTime": 0.0,
+          "DecTime": 0.0
+        },
+        "ConveryNormal": {
+          "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+          "StartSpeed": 0.0,
+          "MaxSpeed": 0.0,
+          "AccTime": 0.0,
+          "DecTime": 0.0
+        }
+      },
+      "Scheme": {
+        "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.Shceme, GeneralMachine.Motion],[System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.GeneralAxis, GeneralMachine.Motion],[GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion]], mscorlib]], mscorlib",
+        "MaunalSlow": {
+          "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.GeneralAxis, GeneralMachine.Motion],[GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion]], mscorlib",
+          "X": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 300.0,
+            "AccTime": 500.0,
+            "DecTime": 500.0
+          },
+          "Y": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 300.0,
+            "AccTime": 500.0,
+            "DecTime": 500.0
+          },
+          "Z": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 150.0,
+            "AccTime": 300.0,
+            "DecTime": 300.0
+          },
+          "U": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 150.0,
+            "AccTime": 300.0,
+            "DecTime": 300.0
+          },
+          "TRUN": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 150.0,
+            "AccTime": 300.0,
+            "DecTime": 300.0
+          }
+        },
+        "ManualNormal": {
+          "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.GeneralAxis, GeneralMachine.Motion],[GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion]], mscorlib",
+          "X": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 10.0,
+            "MaxSpeed": 300.0,
+            "AccTime": 500.0,
+            "DecTime": 500.0
+          },
+          "Y": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 10.0,
+            "MaxSpeed": 300.0,
+            "AccTime": 500.0,
+            "DecTime": 500.0
+          },
+          "Z": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 0.0,
+            "AccTime": 0.0,
+            "DecTime": 0.0
+          },
+          "U": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 0.0,
+            "AccTime": 0.0,
+            "DecTime": 0.0
+          },
+          "TRUN": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 0.0,
+            "AccTime": 0.0,
+            "DecTime": 0.0
+          }
+        },
+        "ManualFast": {
+          "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.GeneralAxis, GeneralMachine.Motion],[GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion]], mscorlib",
+          "X": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 150.0,
+            "AccTime": 300.0,
+            "DecTime": 300.0
+          },
+          "Y": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 150.0,
+            "AccTime": 300.0,
+            "DecTime": 300.0
+          },
+          "Z": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 0.0,
+            "AccTime": 0.0,
+            "DecTime": 0.0
+          },
+          "U": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 0.0,
+            "AccTime": 0.0,
+            "DecTime": 0.0
+          },
+          "TRUN": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 0.0,
+            "AccTime": 0.0,
+            "DecTime": 0.0
+          }
+        },
+        "AutoSlow": {
+          "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.GeneralAxis, GeneralMachine.Motion],[GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion]], mscorlib",
+          "X": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 500.0,
+            "AccTime": 1000.0,
+            "DecTime": 1000.0
+          },
+          "Y": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 500.0,
+            "AccTime": 1000.0,
+            "DecTime": 1000.0
+          },
+          "Z": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 300.0,
+            "AccTime": 500.0,
+            "DecTime": 500.0
+          },
+          "U": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 300.0,
+            "AccTime": 500.0,
+            "DecTime": 500.0
+          },
+          "TRUN": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 300.0,
+            "AccTime": 500.0,
+            "DecTime": 500.0
+          }
+        },
+        "AutoNormal": {
+          "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.GeneralAxis, GeneralMachine.Motion],[GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion]], mscorlib",
+          "X": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 1000.0,
+            "AccTime": 5000.0,
+            "DecTime": 5000.0
+          },
+          "Y": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 1000.0,
+            "AccTime": 5000.0,
+            "DecTime": 5000.0
+          },
+          "Z": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 500.0,
+            "AccTime": 1000.0,
+            "DecTime": 1000.0
+          },
+          "U": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 500.0,
+            "AccTime": 1000.0,
+            "DecTime": 1000.0
+          },
+          "TRUN": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 1000.0,
+            "AccTime": 3000.0,
+            "DecTime": 3000.0
+          }
+        },
+        "AutoFast": {
+          "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.GeneralAxis, GeneralMachine.Motion],[GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion]], mscorlib",
+          "X": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 1500.0,
+            "AccTime": 10000.0,
+            "DecTime": 10000.0
+          },
+          "Y": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 1500.0,
+            "AccTime": 10000.0,
+            "DecTime": 10000.0
+          },
+          "Z": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 1000.0,
+            "AccTime": 2000.0,
+            "DecTime": 2000.0
+          },
+          "U": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 1000.0,
+            "AccTime": 2000.0,
+            "DecTime": 2000.0
+          },
+          "TRUN": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 1000.0,
+            "AccTime": 3000.0,
+            "DecTime": 3000.0
+          }
+        },
+        "Home": {
+          "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.GeneralAxis, GeneralMachine.Motion],[GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion]], mscorlib",
+          "X": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 200.0,
+            "DecTime": 200.0
+          },
+          "Y": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 200.0,
+            "DecTime": 200.0
+          },
+          "Z": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 30.0,
+            "AccTime": 100.0,
+            "DecTime": 100.0
+          },
+          "U": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 50.0,
+            "AccTime": 200.0,
+            "DecTime": 200.0
+          },
+          "TRUN": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 50.0,
+            "AccTime": 200.0,
+            "DecTime": 200.0
+          }
+        },
+        "GoLimit": {
+          "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.GeneralAxis, GeneralMachine.Motion],[GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion]], mscorlib",
+          "X": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 300.0,
+            "DecTime": 300.0
+          },
+          "Y": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 300.0,
+            "DecTime": 300.0
+          },
+          "Z": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 30.0,
+            "AccTime": 100.0,
+            "DecTime": 100.0
+          },
+          "U": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 50.0,
+            "AccTime": 200.0,
+            "DecTime": 200.0
+          },
+          "TRUN": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 50.0,
+            "AccTime": 200.0,
+            "DecTime": 200.0
+          }
+        }
+      },
+      "Segments": {
+        "$type": "System.Collections.Generic.List`1[[GeneralMachine.Motion.SegmentItem, GeneralMachine.Motion]], mscorlib",
+        "$values": []
+      },
+      "EnableSegment": false
+    },
+    "After": {
+      "$type": "GeneralMachine.Config.SpeedConfig, GeneralMachine.Config",
+      "OtherSchemeName": {
+        "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.OtherShceme, GeneralMachine.Motion],[System.String, mscorlib]], mscorlib",
+        "UpFly": "UpFly",
+        "DownFly": "DownFly",
+        "ConverySlow": "ConverySlow",
+        "ConveryNormal": "ConveryNormal"
+      },
+      "SchemeName": {
+        "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.Shceme, GeneralMachine.Motion],[System.String, mscorlib]], mscorlib",
+        "MaunalSlow": "MaunalSlow",
+        "ManualNormal": "ManualNormal",
+        "ManualFast": "ManualFast",
+        "AutoSlow": "AutoSlow",
+        "AutoNormal": "AutoNormal",
+        "AutoFast": "AutoFast",
+        "Home": "Home",
+        "GoLimit": "GoLimit"
+      },
+      "OtherScheme": {
+        "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.OtherShceme, GeneralMachine.Motion],[GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion]], mscorlib",
+        "UpFly": {
+          "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+          "StartSpeed": 0.0,
+          "MaxSpeed": 0.0,
+          "AccTime": 0.0,
+          "DecTime": 0.0
+        },
+        "DownFly": {
+          "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+          "StartSpeed": 0.0,
+          "MaxSpeed": 0.0,
+          "AccTime": 0.0,
+          "DecTime": 0.0
+        },
+        "ConverySlow": {
+          "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+          "StartSpeed": 0.0,
+          "MaxSpeed": 0.0,
+          "AccTime": 0.0,
+          "DecTime": 0.0
+        },
+        "ConveryNormal": {
+          "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+          "StartSpeed": 0.0,
+          "MaxSpeed": 0.0,
+          "AccTime": 0.0,
+          "DecTime": 0.0
+        }
+      },
+      "Scheme": {
+        "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.Shceme, GeneralMachine.Motion],[System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.GeneralAxis, GeneralMachine.Motion],[GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion]], mscorlib]], mscorlib",
+        "MaunalSlow": {
+          "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.GeneralAxis, GeneralMachine.Motion],[GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion]], mscorlib",
+          "X": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 300.0,
+            "DecTime": 300.0
+          },
+          "Y": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 300.0,
+            "DecTime": 300.0
+          },
+          "Z": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 300.0,
+            "DecTime": 300.0
+          },
+          "U": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 300.0,
+            "DecTime": 300.0
+          },
+          "TRUN": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 300.0,
+            "DecTime": 300.0
+          }
+        },
+        "ManualNormal": {
+          "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.GeneralAxis, GeneralMachine.Motion],[GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion]], mscorlib",
+          "X": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 300.0,
+            "DecTime": 300.0
+          },
+          "Y": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 300.0,
+            "DecTime": 300.0
+          },
+          "Z": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 300.0,
+            "DecTime": 300.0
+          },
+          "U": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 300.0,
+            "DecTime": 300.0
+          },
+          "TRUN": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 300.0,
+            "DecTime": 300.0
+          }
+        },
+        "ManualFast": {
+          "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.GeneralAxis, GeneralMachine.Motion],[GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion]], mscorlib",
+          "X": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 500.0,
+            "DecTime": 500.0
+          },
+          "Y": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 500.0,
+            "DecTime": 500.0
+          },
+          "Z": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 500.0,
+            "DecTime": 500.0
+          },
+          "U": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 500.0,
+            "DecTime": 500.0
+          },
+          "TRUN": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 500.0,
+            "DecTime": 500.0
+          }
+        },
+        "AutoSlow": {
+          "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.GeneralAxis, GeneralMachine.Motion],[GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion]], mscorlib",
+          "X": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 500.0,
+            "AccTime": 1000.0,
+            "DecTime": 1000.0
+          },
+          "Y": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 500.0,
+            "AccTime": 1000.0,
+            "DecTime": 1000.0
+          },
+          "Z": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 300.0,
+            "AccTime": 500.0,
+            "DecTime": 500.0
+          },
+          "U": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 300.0,
+            "AccTime": 500.0,
+            "DecTime": 500.0
+          },
+          "TRUN": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 300.0,
+            "AccTime": 500.0,
+            "DecTime": 500.0
+          }
+        },
+        "AutoNormal": {
+          "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.GeneralAxis, GeneralMachine.Motion],[GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion]], mscorlib",
+          "X": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 1000.0,
+            "AccTime": 5000.0,
+            "DecTime": 5000.0
+          },
+          "Y": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 1000.0,
+            "AccTime": 5000.0,
+            "DecTime": 5000.0
+          },
+          "Z": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 300.0,
+            "AccTime": 500.0,
+            "DecTime": 500.0
+          },
+          "U": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 300.0,
+            "AccTime": 500.0,
+            "DecTime": 500.0
+          },
+          "TRUN": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 1000.0,
+            "AccTime": 3000.0,
+            "DecTime": 3000.0
+          }
+        },
+        "AutoFast": {
+          "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.GeneralAxis, GeneralMachine.Motion],[GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion]], mscorlib",
+          "X": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 1500.0,
+            "AccTime": 10000.0,
+            "DecTime": 10000.0
+          },
+          "Y": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 1500.0,
+            "AccTime": 10000.0,
+            "DecTime": 10000.0
+          },
+          "Z": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 300.0,
+            "AccTime": 500.0,
+            "DecTime": 500.0
+          },
+          "U": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 300.0,
+            "AccTime": 500.0,
+            "DecTime": 500.0
+          },
+          "TRUN": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 0.0,
+            "MaxSpeed": 300.0,
+            "AccTime": 500.0,
+            "DecTime": 500.0
+          }
+        },
+        "Home": {
+          "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.GeneralAxis, GeneralMachine.Motion],[GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion]], mscorlib",
+          "X": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 10.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 200.0,
+            "DecTime": 200.0
+          },
+          "Y": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 10.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 200.0,
+            "DecTime": 200.0
+          },
+          "Z": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 30.0,
+            "AccTime": 100.0,
+            "DecTime": 100.0
+          },
+          "U": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 50.0,
+            "AccTime": 200.0,
+            "DecTime": 200.0
+          },
+          "TRUN": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 50.0,
+            "AccTime": 200.0,
+            "DecTime": 200.0
+          }
+        },
+        "GoLimit": {
+          "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Motion.GeneralAxis, GeneralMachine.Motion],[GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion]], mscorlib",
+          "X": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 300.0,
+            "DecTime": 300.0
+          },
+          "Y": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 100.0,
+            "AccTime": 300.0,
+            "DecTime": 300.0
+          },
+          "Z": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 30.0,
+            "AccTime": 100.0,
+            "DecTime": 100.0
+          },
+          "U": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 50.0,
+            "AccTime": 200.0,
+            "DecTime": 200.0
+          },
+          "TRUN": {
+            "$type": "GeneralMachine.Motion.HostarSpeed, GeneralMachine.Motion",
+            "StartSpeed": 5.0,
+            "MaxSpeed": 50.0,
+            "AccTime": 200.0,
+            "DecTime": 200.0
+          }
+        }
+      },
+      "Segments": {
+        "$type": "System.Collections.Generic.List`1[[GeneralMachine.Motion.SegmentItem, GeneralMachine.Motion]], mscorlib",
+        "$values": []
+      },
+      "EnableSegment": false
+    }
+  }
+}

@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54E4CA9A-9A50-4164-BFF1-50C24E6F5014}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeneralMachine.Press</RootNamespace>
+    <AssemblyName>GeneralMachine.Press</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeneralMachine.Motion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\GeneralMachine.Motion.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralMachine.Trace, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\GeneralMachine.Trace.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralMachine.Vision, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\GeneralMachine.Vision.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.Vision.Common, Version=13.1.35.100, Culture=neutral, PublicKeyToken=18cbae0f9955702a, processorArchitecture=x86" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\branches\MFLEX_MIC2.0\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.7.430, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PressErrorView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PressErrorView.Designer.cs">
+      <DependentUpon>PressErrorView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PressHelper.cs" />
+    <Compile Include="PressChartCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PressChartCtrl.Designer.cs">
+      <DependentUpon>PressChartCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PressSensorSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PressSensorSetting.Designer.cs">
+      <DependentUpon>PressSensorSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeneralMachine.BasicUI\GeneralMachine.BasicUI.csproj">
+      <Project>{db7b718c-e6b6-4245-995c-8fed12dc773e}</Project>
+      <Name>GeneralMachine.BasicUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeneralMachine.Config\GeneralMachine.Config.csproj">
+      <Project>{7d684500-88dd-48b3-9af9-1642b26a82b4}</Project>
+      <Name>GeneralMachine.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeneralMachine.Flow\GeneralMachine.Flow.csproj">
+      <Project>{7F62FB99-76F1-4B30-A242-2B3BF980E357}</Project>
+      <Name>GeneralMachine.Flow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeneralMachineCommon\GeneralMachineCommon.csproj">
+      <Project>{36510f6f-3da0-4870-ae97-fd01fe25e476}</Project>
+      <Name>GeneralMachineCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PressChartCtrl.resx">
+      <DependentUpon>PressChartCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PressErrorView.resx">
+      <DependentUpon>PressErrorView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PressSensorSetting.resx">
+      <DependentUpon>PressSensorSetting.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F62FB99-76F1-4B30-A242-2B3BF980E357}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeneralMachine.Flow</RootNamespace>
+    <AssemblyName>GeneralMachine.Flow</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MathNet.Numerics, Version=4.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NationalInstruments.Common, Version=13.0.35.190, Culture=neutral, PublicKeyToken=18cbae0f9955702a, processorArchitecture=MSIL" />
+    <Reference Include="NationalInstruments.Vision.Common, Version=13.1.35.100, Culture=neutral, PublicKeyToken=18cbae0f9955702a, processorArchitecture=x86" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\branches\MFLEX_MIC2.0\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.7.430, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\ZedGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph.Web, Version=5.1.5.29221, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\ZedGraph.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Editer\BadmarkListCtrl.cs" />
+    <Compile Include="Editer\CreateProgramCtrl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editer\CreateProgramCtrl.Designer.cs">
+      <DependentUpon>CreateProgramCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editer\FeederPropertyCtrl.cs" />
+    <Compile Include="Editer\fmChangeXY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editer\fmChangeXY.Designer.cs">
+      <DependentUpon>fmChangeXY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editer\frmPasteReCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editer\frmPasteReCheck.Designer.cs">
+      <DependentUpon>frmPasteReCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editer\PasteListSetCtrl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editer\PasteListSetCtrl.Designer.cs">
+      <DependentUpon>PasteListSetCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editer\ReadCodeListCtrl.cs" />
+    <Compile Include="MachineRunDataHelper.cs" />
+    <Compile Include="Nodes\BadMarkListNode.cs" />
+    <Compile Include="Nodes\BadmarkParam.cs" />
+    <Compile Include="Editer\ProgramEditCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editer\ProgramEditCtrl.Designer.cs">
+      <DependentUpon>ProgramEditCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachineEntiy.cs" />
+    <Compile Include="Nodes\Base\NodeParam.cs" />
+    <Compile Include="Nodes\MarkParam.cs" />
+    <Compile Include="Nodes\PasteListNode.cs" />
+    <Compile Include="Nodes\PasteParam.cs" />
+    <Compile Include="Nodes\PCBParam.cs" />
+    <Compile Include="Nodes\PCSParam.cs" />
+    <Compile Include="Nodes\ReadCodeListNode.cs" />
+    <Compile Include="Nodes\ReadCodeParam.cs" />
+    <Compile Include="ProgramFlow.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StateMachine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Step\Base\FlowStep.cs" />
+    <Compile Include="Step\Base\MoveParam.cs" />
+    <Compile Include="Step\NozzleCheckStep.cs" />
+    <Compile Include="Step\CalBadmarkStep.cs" />
+    <Compile Include="Step\DownVisionStep.cs" />
+    <Compile Include="Step\PasteLabelStep.cs" />
+    <Compile Include="Step\ReadPanelCodeStep.cs" />
+    <Compile Include="Step\ReadPcsCodeStep.cs" />
+    <Compile Include="Step\RejectLabelStep.cs" />
+    <Compile Include="Step\SuckLabelStep.cs" />
+    <Compile Include="Step\CalMarkStep.cs" />
+    <Compile Include="SystemEntiy.cs" />
+    <Compile Include="Tool\VisionCalHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeneralMachine.Config\GeneralMachine.Config.csproj">
+      <Project>{7d684500-88dd-48b3-9af9-1642b26a82b4}</Project>
+      <Name>GeneralMachine.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeneralMachine.Motion\GeneralMachine.Motion.csproj">
+      <Project>{02bbfcdf-3f81-4995-b143-59023f08d5ad}</Project>
+      <Name>GeneralMachine.Motion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeneralMachine.Report\GeneralMachine.Report.csproj">
+      <Project>{fcaade4e-1145-4f28-b900-24d045dade0e}</Project>
+      <Name>GeneralMachine.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeneralMachine.Trace\GeneralMachine.Track.csproj">
+      <Project>{b23a4441-20b6-4feb-aa4a-1aa03e3fe8d0}</Project>
+      <Name>GeneralMachine.Track</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeneralMachine.Vision\GeneralMachine.Vision.csproj">
+      <Project>{dbf8334f-c6fe-46dd-aec3-9bd44a12e1b4}</Project>
+      <Name>GeneralMachine.Vision</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeneralMachineCommon\GeneralMachineCommon.csproj">
+      <Project>{36510f6f-3da0-4870-ae97-fd01fe25e476}</Project>
+      <Name>GeneralMachineCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Editer\CreateProgramCtrl.resx">
+      <DependentUpon>CreateProgramCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editer\fmChangeXY.resx">
+      <DependentUpon>fmChangeXY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editer\frmPasteReCheck.resx">
+      <DependentUpon>frmPasteReCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editer\PasteListSetCtrl.resx">
+      <DependentUpon>PasteListSetCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editer\ProgramEditCtrl.resx">
+      <DependentUpon>ProgramEditCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\Board_RunData.datasource" />
+    <None Include="Properties\DataSources\GeneralMachine.Flow.Nodes.PasteParam.datasource" />
+    <None Include="Properties\DataSources\Pcs_RunData.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
