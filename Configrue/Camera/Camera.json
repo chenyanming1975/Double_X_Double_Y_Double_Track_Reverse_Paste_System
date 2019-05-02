@@ -1,0 +1,120 @@
+{
+  "$type": "GeneralMachine.Config.CameraDefine, GeneralMachine.Config",
+  "CameraList": {
+    "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Config.Module, GeneralMachine.Config],[System.Collections.Generic.Dictionary`2[[GeneralMachine.Config.Camera, GeneralMachine.Config],[GeneralMachine.Config.CameraConfig, GeneralMachine.Config]], mscorlib]], mscorlib",
+    "Front": {
+      "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Config.Camera, GeneralMachine.Config],[GeneralMachine.Config.CameraConfig, GeneralMachine.Config]], mscorlib",
+      "Top": {
+        "$type": "GeneralMachine.Config.CameraConfig, GeneralMachine.Config",
+        "WorldCenterPoint": {
+          "$type": "System.Drawing.PointF, System.Drawing",
+          "IsEmpty": true,
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Name": "cam4",
+        "AOI": "0, 0, 1280, 1024",
+        "DefaultGain": 6,
+        "DefaultExp": 200,
+        "ProtName": "COM3",
+        "BaudRate": 9600,
+        "RedChannel": 1,
+        "GreenChannel": 0,
+        "BlueChannel": 0
+      },
+      "Bottom": {
+        "$type": "GeneralMachine.Config.CameraConfig, GeneralMachine.Config",
+        "WorldCenterPoint": {
+          "$type": "System.Drawing.PointF, System.Drawing",
+          "IsEmpty": true,
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Name": "cam5",
+        "AOI": "0, 0, 1920, 1200",
+        "DefaultGain": 6,
+        "DefaultExp": 200,
+        "ProtName": "COM3",
+        "BaudRate": 9600,
+        "RedChannel": 1,
+        "GreenChannel": 2,
+        "BlueChannel": 3
+      },
+      "Label": {
+        "$type": "GeneralMachine.Config.CameraConfig, GeneralMachine.Config",
+        "WorldCenterPoint": {
+          "$type": "System.Drawing.PointF, System.Drawing",
+          "IsEmpty": true,
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Name": "cam2",
+        "AOI": "0, 0, 1280, 1024",
+        "DefaultGain": 6,
+        "DefaultExp": 200,
+        "ProtName": "COM1",
+        "BaudRate": 9600,
+        "RedChannel": 1,
+        "GreenChannel": 2,
+        "BlueChannel": 3
+      }
+    },
+    "After": {
+      "$type": "System.Collections.Generic.Dictionary`2[[GeneralMachine.Config.Camera, GeneralMachine.Config],[GeneralMachine.Config.CameraConfig, GeneralMachine.Config]], mscorlib",
+      "Top": {
+        "$type": "GeneralMachine.Config.CameraConfig, GeneralMachine.Config",
+        "WorldCenterPoint": {
+          "$type": "System.Drawing.PointF, System.Drawing",
+          "IsEmpty": true,
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Name": "cam3",
+        "AOI": "0, 0, 1280, 1024",
+        "DefaultGain": 6,
+        "DefaultExp": 200,
+        "ProtName": "COM1",
+        "BaudRate": 9600,
+        "RedChannel": 1,
+        "GreenChannel": 0,
+        "BlueChannel": 0
+      },
+      "Bottom": {
+        "$type": "GeneralMachine.Config.CameraConfig, GeneralMachine.Config",
+        "WorldCenterPoint": {
+          "$type": "System.Drawing.PointF, System.Drawing",
+          "IsEmpty": true,
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Name": "cam1",
+        "AOI": "0, 0, 1920, 1200",
+        "DefaultGain": 6,
+        "DefaultExp": 200,
+        "ProtName": "COM1",
+        "BaudRate": 9600,
+        "RedChannel": 3,
+        "GreenChannel": 4,
+        "BlueChannel": 2
+      },
+      "Label": {
+        "$type": "GeneralMachine.Config.CameraConfig, GeneralMachine.Config",
+        "WorldCenterPoint": {
+          "$type": "System.Drawing.PointF, System.Drawing",
+          "IsEmpty": true,
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Name": "cam6",
+        "AOI": "0, 0, 1280, 1024",
+        "DefaultGain": 6,
+        "DefaultExp": 200,
+        "ProtName": "COM1",
+        "BaudRate": 9600,
+        "RedChannel": 1,
+        "GreenChannel": 2,
+        "BlueChannel": 3
+      },
+    },
+  }
+}
