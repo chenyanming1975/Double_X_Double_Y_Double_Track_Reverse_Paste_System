@@ -23,6 +23,7 @@ namespace GeneralMachine.IO
         {
             //IO
             //IO2
+            //123
             IODefine.Load();
             this.propertyGrid1.SelectedObject = IODefine.Instance.MachineIO[Module.Front];
             this.propertyGrid2.SelectedObject = IODefine.Instance.MachineIO[Module.After];
