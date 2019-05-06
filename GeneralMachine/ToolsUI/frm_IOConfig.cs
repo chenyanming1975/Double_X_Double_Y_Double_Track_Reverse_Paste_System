@@ -22,6 +22,7 @@ namespace GeneralMachine.IO
         private void frm_IOConfig_Load(object sender, EventArgs e)
         {
             //IO
+            //IO2
             IODefine.Load();
             this.propertyGrid1.SelectedObject = IODefine.Instance.MachineIO[Module.Front];
             this.propertyGrid2.SelectedObject = IODefine.Instance.MachineIO[Module.After];
